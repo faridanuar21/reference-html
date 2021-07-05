@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 HTML Useful Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>5 INPUT THAT CAN BE USEFUL IN HTML</h2>
+
+    <!-- Search input -->
+    <form role="search">
+        <div>
+            <input type="search" id="mySearch" name="q" placeholder="Search the site.." aria-label="Search through site content">
+            <button>Search</button>
+        </div>
+    </form>
+
+<br>
+    <!-- URL input -->
+    <label for="url">Enter an https:// url:</label>
+    <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://." size="30" required>
+
+<br>
+
+    <!-- Range input -->
+    <p>Audio settings</p>
+
+    <div>
+        <input type="range" id="volume" name="volume" min="0" max="11">
+        <label for="volume">Volume</label>
+    </div>
+
+    <div>
+        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+        <label for="cowbell">Cowbell</label>
+    </div>
+
+<br>
+
+    <!-- Tel Input -->
+    <label for="phone">Enter your phone number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <small>Format: 123-456-7890</small>
+
+<br>
+<br>
+
+    <!-- Reset input -->
+    <form>
+        <div class="controls">
+            <label for="id">User ID:</label>
+            <input type="text" id="id" name="id"/>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+<br>
+
+
+</body>
+</html>
